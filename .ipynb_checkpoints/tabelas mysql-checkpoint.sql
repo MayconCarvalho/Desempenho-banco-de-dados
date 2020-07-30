@@ -1,0 +1,22 @@
+CREATE TABLE `Cursos_Prouni` (
+    `grau` ENUM ('Bacharelado', 'Licenciatura', 'Tecnológico'),
+    `turno` ENUM ('Curso a Distância', 'Integral', 'Matutino', 'Noturno', 'Vespertino'),
+    `mensalidade` double,
+    `bolsa_integral_cotas` int,
+    `bolsa_integral_ampla` int,
+    `bolsa_parcial_cotas` int,
+    `bolsa_parcial_ampla` int,
+    `curso_id` bigint(20),
+    `curso_busca` varchar(100),
+    `cidade_busca` varchar(100),
+    `uf_busca` varchar(2),
+    `cidade_filtro` varchar(20),
+    `universidade_nome` varchar(150),
+    `campus_nome` varchar(250),
+    `campus_external_id` bigint(20),
+    `nome` varchar(100),
+    `nota_integral_ampla` double,
+    `nota_integral_cotas` double,
+    `nota_parcial_ampla` double,
+    `nota_parcial_cotas` double
+);
